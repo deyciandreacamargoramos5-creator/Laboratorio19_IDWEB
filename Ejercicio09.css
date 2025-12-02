@@ -1,0 +1,100 @@
+:root {
+    --color-pokemon-red: #cc0000;
+    --color-pokemon-blue: #3b4cca;
+    --color-background-light: #f5f5f5;
+    --color-text-dark: #333;
+}
+body {
+    font-family: Arial, sans-serif; 
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    color: var(--color-pokemon-red);
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--color-pokemon-blue);
+    padding-bottom: 10px;
+}
+/* --- Input y Botón --- */
+input[type="number"], button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+input[type="number"] {
+    width: 150px;
+    text-align: center;
+}
+button {
+    background-color: var(--color-pokemon-blue);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+button:hover {
+    background-color: #2b3b9a; 
+}
+/* --- Información del Pokémon --- */
+#pokemon-info {
+    margin-top: 40px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    background-color: white;
+    border: 5px solid var(--color-pokemon-red);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#pokemon-info h2 {
+    color: var(--color-pokemon-blue);
+    margin-top: 0;
+    text-transform: capitalize;
+    font-size: 1.8em;
+}
+#pokemon-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 10px 0;
+    border: 2px solid var(--color-pokemon-red);
+    border-radius: 50%;
+    background-color: #eee;
+}
+#pokemon-info p {
+    line-height: 1.6;
+}
+/* --- Habilidades --- */
+#pokemon-info h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: var(--color-pokemon-red);
+}
+#pokemon-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pokemon-info li {
+    background-color: #f0f0f0;
+    color: var(--color-text-dark);
+    padding: 5px 10px;
+    margin: 4px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    text-transform: capitalize;
+}
